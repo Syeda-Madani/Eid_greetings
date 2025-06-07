@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eid al-Adha Mubarak</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #fff8e1, #ffecb3);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 50px;
+      color: #2c3e50;
+    }
+
+    .moon {
+      font-size: 5rem;
+      color: #f4c542;
+      animation: rotateMoon 5s linear infinite;
+    }
+
+    @keyframes rotateMoon {
+      0% { transform: rotate(0deg);}
+      100% { transform: rotate(360deg);}
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin: 20px 0;
+      animation: fadeIn 2s ease-in;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: #555;
+      animation: fadeIn 3s ease-in;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px);}
+      100% { opacity: 1; transform: translateY(0);}
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      background-color: #ff9800;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #f57c00;
+    }
+
+    #blessing {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="moon">🌙✨</div>
+  <h2>Eid al-Adha Mubarak!</h2>
+  <p>May your faith and devotion bring peace, joy, and prosperity to your life.</p>
+  
+  <div>
+  <h2>Regards: Syeda Faiza Hanif</h2>
+  <img src="sheepimage.png" alt="Eid Sheep" width="150" style="margin: 30px 0;">
+</div>
+  
+  <br>
+  <button onclick="showBlessing()">Click for a Blessing</button>
+  <div id="blessing">🕌 May Allah accept your good deeds and forgive your sins. Ameen! 🌸</div>
+
+  <script>
+    function showBlessing() {
+      document.getElementById("blessing").style.display = "block";
+    }
+  </script
+
+</body>
+</html>
